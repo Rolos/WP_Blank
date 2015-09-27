@@ -1,0 +1,70 @@
+/*   
+Theme Name: BLANK Theme
+Theme URI: http://digwp.com
+Description: This is just a BLANK starter WordPress Theme template -- WordPress v2.9.1
+Author: Chris Coyier
+Author URI: http://chriscoyier.net
+Version: 1
+*/
+
+@media screen {
+
+* { margin: 0; padding: 0; }
+* html .group, *:first-child+html .group { zoom: 1; } /* First selector = IE6, Second Selector = IE 7 */
+
+a {transition: color 300ms; -webkit-transition: color 300ms; -moz-transition: color 300ms;}
+a:hover { } 
+
+ul, ol { margin: 0 0 10px 0; list-style-position: inside;padding-left: 10px;}
+
+.alignright{float: right;}
+.alignleft{float: left; margin-right: 10px}
+.center{text-align: center;}
+.not-full-width{max-width: 960px; margin: 0 auto; width: 100%}
+.full-with{width: 100%}
+
+/*BASICS FOR THE SEARCHFORM*/
+#searchform{width: 100%;position: relative;}
+#searchform input#s{width: 100%; padding: 7px; border: 1px solid #000; font-size: 1.2em}
+#searchform input#searchsubmit{position: absolute; top: 7px; right: 7px; background: url('bootstrap/images/search.png'); width: 30px; height: 30px; border: none;}
+
+@media(min-width: 767px){
+	/*DROPDOWN ON HOVER*/
+	.dropdown:hover .dropdown-menu {
+		display: block;
+	}
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 767px){
+	
+}
+
+} /* END screen media */
+
+
+@media print {
+
+.do-not-print { display: none; }
+#comments { page-break-before: always; }
+
+body { width: 100% !important; margin: 0 !important; padding: 0 !important; line-height: 1.4; word-spacing: 1.1pt; letter-spacing: 0.2pt; font-family: Garamond,"Times New Roman", serif; color: #000; background: none; font-size: 12pt; }
+h1,h2,h3,h4,h5,h6 { font-family: Helvetica, Arial, sans-serif; }
+h1 { font-size: 19pt; }
+h2 { font-size:17pt; }
+h3 { font-size:15pt; }
+h4,h5,h6 { font-size:12pt; }
+code { font: 10pt Courier, monospace; } 
+blockquote { margin: 1.3em; padding: 1em; }
+img { display: block; margin: 1em 0; }
+a img { border: none; }
+table { margin: 1px; text-align:left; }
+th { border-bottom: 1px solid #333;  font-weight: bold; }
+td { border-bottom: 1px solid #333; }
+th, td { padding: 4px 10px 4px 0; }
+caption { background: #fff; margin-bottom: 2em; text-align: left; }
+thead { display: table-header-group; }
+tr { page-break-inside: avoid; } 
+a { text-decoration: none; color: black; }
+	
+} /* END print media */

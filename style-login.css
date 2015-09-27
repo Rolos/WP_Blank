@@ -1,0 +1,22 @@
+.login h1 a{
+	background-image: url('bootstrap/images/login-page.jpg');
+	width: 260px;
+	background-size: 260px auto;
+}
+.wp-core-ui .button-primary{
+	background-color: #ec1d24; /*COLOR PRINCIPAL DEL BOTON*/
+	width: 30%;
+	font-size: 1em; 
+	transition: background-color 300ms; 
+	-webkit-transition: background-color 300ms; 
+	-moz-transition: background-color 300ms;
+	border-color: #A51217;/*COLOR UN POCO MAS OSCURO QUE EL PRINCIPAL*/
+	/*COLOR MAS CLARO EN QUE EL PRINCIPAL*/
+	box-shadow: 0px 1px 0px rgba(358, 88, 93, 0.5) inset, 0px 1px 0px rgba(0, 0, 0, 0.15)
+}
+.wp-core-ui .button-primary.focus, .wp-core-ui .button-primary.hover, .wp-core-ui .button-primary:focus, .wp-core-ui .button-primary:hover{
+	background-color: rgb(0, 0, 0);/*HOVER BUTTON COLOR*/
+}
+.login #backtoblog a:hover, .login #nav a:hover, .login h1 a:hover{
+	color: #ec1d24;
+}
