@@ -6,11 +6,16 @@
     require_once('wp_bootstrap_navwalker.php');
     
     function theme_initialization(){
+        //add support for post-thumbnails
         add_theme_support('post-thumbnails');
+        //add rss feed links/**         
         add_theme_support( 'automatic-feed-links' );
+        //add the theme domain for translations
+        load_theme_textdomain( 'domain', FALSE, basename( dirname( __FILE__ ) ) . '/languages/' );
+        //register my menus
         register_nav_menus( array(
           'primary' => __('Primary Navigation'),
-          'footer-menu' => __('Footer Menu'),
+          'footer-menu-left' => __('Footer Menu Left'),
           'footer-menu-right' => __('Footer Menu Right')
         ));
     }    
@@ -54,20 +59,9 @@ add_action( 'login_enqueue_scripts', 'my_login_stylesheet' );
             'before_title'  => '<h2>',
             'after_title'   => '</h2>'
         ));
-
-      register_sidebar( array(
-        'name'          => __( 'Sidebar Contact', 'iwc_perez_siragusa' ),
-        'id'            => 'sidebar-contact',
-        'description'   => __( 'Appears on contact page.', 'iwc_perez_siragusa' ),
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</aside>',
-        'before_title'  => '<h3>',
-        'after_title'   => '</h3>',
-    ) );
-
     }
     /*Retrieves an image from image folder*/
-    function iwc_images($name){
+    function mad_images($name){
       return get_stylesheet_directory_uri() . '/bootstrap/images/' . $name;
     }
 
