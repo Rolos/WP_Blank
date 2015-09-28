@@ -1,26 +1,31 @@
-	<footer class="wrapper-full">
-		&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?>
-		<div class="contact-footer">
-            <p class="title">Contacto</p>
-            <p class="content">
-                Roberto Pastoriza 552, Esq. Calle 5<br/>
-                Evaristo Morales,<br/>
-                Santo Domingo, Rep. Dom.
-            </p>
-        </div>
-	    <section class="site-map">
-	        <div class="wrapper">
-	            <?php
-	            wp_nav_menu(array('theme_location' => 'footer-menu'));
-	            ?>
+	<footer class="full-width">
+		<div class="yellow_stripe"></div>
+		<div class="not-full-width">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<section>
+							<h3><?php _e('', '');?></h3>
+				            <?php wp_nav_menu(array('theme_location' => 'footer-menu-left')); ?>
+					    </section>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<section>
+							<h3><?php _e('', '');?></h3>
+				            <?php wp_nav_menu(array('theme_location' => 'footer-menu-right')); ?>
+					    </section>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<section>
+					    </section>
+					</div>
+				</div>
+			</div>
+			<div class="below_footer">
+	        	<p class="alignleft">&copy;<?php echo date("Y"); echo " "; bloginfo('name');?></p>
+	            <p class="alignright credito">Diseño y desarrollo: <a href="http://www.netmadness.net/" target="_blank">Netmadness</a></p>
 	        </div>
-	    </section>
-
-	    <section class="inter-credit">
-	        <div class="wrapper">
-	            <p>Diseño y desarrollo: <a href="http://www.intermade.com/" target="_blank">Intermade Web Creations</a></p>
-	        </div>
-	    </section>
+		</div>
 	</footer>
 
 	<?php wp_footer(); ?>

@@ -2,7 +2,6 @@
     <div>
         <label for="s" class="screen-reader-text">Buscar</label>
         <input type="text" id="s" name="s" value="" />
-        
-        <input type="submit" value="" id="searchsubmit" />
+        <button type="submit" id="searchsubmit"><i class="fa fa-search"></i></button>
     </div>
 </form>

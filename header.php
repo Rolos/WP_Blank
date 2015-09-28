@@ -8,7 +8,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="<?php echo iwc_images('favicon.ico'); ?>" type="image/x-icon" />
 	<!-- Add bootstrap CDN -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 	<!--ADD FONT AWESOME http://fortawesome.github.io/Font-Awesome/-->
 	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/bootstrap/css/font-awesome.min.css'; ?>" type="text/css" />
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
@@ -77,6 +78,7 @@
                 );
                 //navbar-nav
                 ?>
+                <?php require '/inc/socialbox.php'; ?>
             </div>
         </nav>
     </header>
