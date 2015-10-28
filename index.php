@@ -3,7 +3,7 @@
 <section class="container-fluid">
     <div class="row">
         <main class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-
+	<?php $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1; ?> 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
@@ -24,7 +24,10 @@
 
 		</article>
 
-	<?php endwhile; ?>
+	<?php 
+		endwhile; 
+		custom_pagination("","",$paged);  wp_reset_postdata(); 
+	?>
 
 	<?php include (TEMPLATEPATH . '/inc/nav.php' ); ?>
 
