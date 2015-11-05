@@ -1,5 +1,4 @@
 	<footer class="full-width">
-		<div class="yellow_stripe"></div>
 		<div class="not-full-width">
 			<div class="container-fluid">
 				<div class="row">
