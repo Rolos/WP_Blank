@@ -36,6 +36,19 @@ ul, ol { margin: 0 0 10px 0; list-style-position: inside;padding-left: 10px;}
 /*HEADER NAV*/
 .navbar-toggle .icon-bar{background-color: #fff}
 
+/*PAGINATION*/
+#vfmnav{margin-bottom: 30px;text-align: center;}
+#vfmnav .navigation{height: 30px;}
+#vfmnav .navigation .page-num{margin-right: 15px;}
+#vfmnav .navigation a.page-numbers, #vfmnav .navigation .current{padding: 3px;border-radius: 50%;text-align: center;display: inline-block;margin-right: 3px;height: 25px;width: 25px;-webkit-transition: all 300ms;-moz-transition: all 300ms;-ms-transition: all 300ms;transition: all 300ms;}
+#vfmnav .navigation .current{background-color: #ECECEC;}
+#vfmnav .navigation a.page-numbers{color: #fff;background-color: #E96E25;}
+#vfmnav .navigation .dots{margin-left: -3px;}
+#vfmnav .navigation a.page-numbers:hover{background-color: #9C0008;}
+#vfmnav .navigation a.page-numbers.prev, #vfmnav .navigation a.page-numbers.next{color: #E96E25;background-color: #fff;}
+#vfmnav .navigation a.page-numbers.prev{margin-right: -5px;}
+#vfmnav .navigation a.page-numbers.next{margin-left: -5px;}
+
 /*BASICS FOR THE SEARCHFORM*/
 #searchform{width: 100%;position: relative;}
 #searchform input#s{width: 100%; padding: 7px; border: 1px solid #000; font-size: 1.2em}
